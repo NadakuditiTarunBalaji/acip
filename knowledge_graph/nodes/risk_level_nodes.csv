@@ -1,0 +1,5 @@
+node_id,node_type,name,risk_value
+RL001,RiskLevel,Low,1
+RL002,RiskLevel,Medium,2
+RL003,RiskLevel,High,3
+RL004,RiskLevel,Critical,4

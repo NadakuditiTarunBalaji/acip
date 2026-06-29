@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ACIP-X1 Dashboard</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #38bdf8;
+        }
+
+        button {
+            padding: 8px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            width: 100%;
+            margin: 5px 0;
+            padding: 5px;
+        }
+
+        pre {
+            background: #000;
+            padding: 10px;
+            height: 200px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🚗 ACIP-X1 Dashboard</h1>
+
+<div class="grid">
+
+    <!-- CAN LIVE DATA -->
+    <div class="card">
+        <h2>🚗 Live Vehicle Data</h2>
+        <p>RPM: <span id="rpm">0</span></p>
+        <p>Speed: <span id="speed">0</span></p>
+        <p>Temp: <span id="temp">0</span></p>
+        <p>Health: <span id="health">0</span></p>
+    </div>
+
+    <!-- CAN API TEST -->
+    <div class="card">
+        <h2>📡 Send CAN Frame</h2>
+
+        <input id="vehicle_id" placeholder="Vehicle ID" />
+        <input id="rpm_input" placeholder="RPM" />
+        <input id="speed_input" placeholder="Speed" />
+        <input id="temp_input" placeholder="Temp" />
+
+        <button onclick="sendCAN()">Send CAN</button>
+    </div>
+
+    <!-- API RESPONSE -->
+    <div class="card">
+        <h2>📊 API Response</h2>
+        <pre id="output"></pre>
+    </div>
+
+</div>
+
+<script>
+const API = "http://127.0.0.1:8000";
+
+// --------------------
+// SEND CAN FRAME
+// --------------------
+async function sendCAN() {
+
+    const vehicleId = document.getElementById("vehicle_id").value;
+    const rpm = document.getElementById("rpm_input").value;
+    const speed = document.getElementById("speed_input").value;
+    const temp = document.getElementById("temp_input").value;
+
+    // ❌ VALIDATION CHECK
+    if (!vehicleId || !rpm || !speed || !temp) {
+        alert("Please fill all fields");
+        return;
+    }
+
+    const payload = {
+        vehicle_id: Number(vehicleId),
+        can_id: "0x0C5",
+        dlc: 8,
+        raw_data: "FF00AA11",
+        decoded_data: {
+            rpm: Number(rpm),
+            speed: Number(speed),
+            engine_temp: Number(temp)
+        }
+    };
+
+    const res = await fetch("http://localhost:8000/api/can/frame", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(payload)
+    });
+
+    const data = await res.json();
+
+    document.getElementById("output").innerText =
+        JSON.stringify(data, null, 2);
+}
+
+// --------------------
+// WEBSOCKET LIVE DATA
+// --------------------
+const socket = new WebSocket("ws://127.0.0.1:8000/ws/vehicle/1");
+
+socket.onopen = () => {
+    console.log("WebSocket connected");
+};
+
+socket.onmessage = (event) => {
+
+    console.log("RAW:", event.data);
+
+    const data = JSON.parse(event.data);
+
+    // ✅ SAFELY MAP FIELDS
+    const can = data.can || {};
+    const ai = data.ai || {};
+
+    document.getElementById("rpm").innerText = can.rpm ?? 0;
+    document.getElementById("speed").innerText = can.speed ?? 0;
+    document.getElementById("temp").innerText = can.engine_temp ?? 0;
+
+    document.getElementById("health").innerText =
+        ai.health_score ?? 0;
+};
+</script>
+
+</body>
+</html>

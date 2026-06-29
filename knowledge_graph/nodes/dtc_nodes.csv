@@ -1,0 +1,28 @@
+node_id,node_type,name,domain
+DTC001,DTC,Battery Overvoltage Detected,Battery
+DTC002,DTC,Battery Undervoltage Detected,Battery
+DTC003,DTC,Battery Overcurrent Detected,Battery
+DTC004,DTC,Battery Overtemperature Detected,Battery
+DTC005,DTC,Battery Undertemperature Detected,Battery
+DTC006,DTC,SOC Below Warning Threshold,Battery
+DTC007,DTC,SOC Critical Level Reached,Battery
+DTC008,DTC,SOH Below Warning Threshold,Battery
+DTC009,DTC,SOH Critical Level Reached,Battery
+DTC010,DTC,Cell Voltage Imbalance Detected,Battery
+DTC011,DTC,Motor Overspeed Detected,Powertrain
+DTC012,DTC,Motor Overtorque Detected,Powertrain
+DTC013,DTC,Vehicle Overspeed Detected,Powertrain
+DTC014,DTC,Inverter Overtemperature Detected,Powertrain
+DTC015,DTC,Regenerative Braking Failure Detected,Powertrain
+DTC016,DTC,Accelerator Pedal Failure Detected,Powertrain
+DTC017,DTC,Power Output Exceeded Limit,Powertrain
+DTC018,DTC,Energy Consumption Anomaly Detected,Powertrain
+DTC019,DTC,Invalid Drive Mode Selected,Powertrain
+DTC020,DTC,Charging Status Fault Detected,Powertrain
+DTC021,DTC,Motor Overcurrent Detected,Powertrain
+DTC022,DTC,Motor Overvoltage Detected,Powertrain
+DTC023,DTC,Range Estimation Fault,Powertrain
+DTC024,DTC,Torque Request Exceeded Limit,Powertrain
+DTC025,DTC,Powertrain Fault DTC Delay Exceeded,Powertrain
+DTC026,DTC,Cell Undervoltage Detected,Battery
+DTC027,DTC,Cell Overvoltage Detected,Battery

@@ -1,0 +1,28 @@
+node_id,node_type,name,domain
+ACT001,Action,Inspect Cooling System,Battery
+ACT002,Action,Check Charging Circuit,Battery
+ACT003,Action,Run Thermal Diagnostics,Battery
+ACT004,Action,Perform Battery Health Check,Battery
+ACT005,Action,Reduce Vehicle Load,Battery
+ACT006,Action,Inspect Power Electronics,Battery
+ACT007,Action,Check BMS Sensors,Battery
+ACT008,Action,Perform Cell Balancing,Battery
+ACT009,Action,Run Full Diagnostic Scan,Battery
+ACT010,Action,Schedule Battery Replacement,Battery
+ACT011,Action,Inspect Motor Control ECU,Powertrain
+ACT012,Action,Reduce Mechanical Load,Powertrain
+ACT013,Action,Check Speed Limiter Settings,Powertrain
+ACT014,Action,Inspect Inverter Cooling System,Powertrain
+ACT015,Action,Inspect Regenerative Brake Controller,Powertrain
+ACT016,Action,Inspect Pedal Sensor Wiring,Powertrain
+ACT017,Action,Inspect Power Management Software,Powertrain
+ACT018,Action,Recalibrate Energy Metering Sensor,Powertrain
+ACT019,Action,Inspect Drive Mode Switch,Powertrain
+ACT020,Action,Inspect Charging Port Communication,Powertrain
+ACT021,Action,Inspect Motor Winding,Powertrain
+ACT022,Action,Inspect Inverter Voltage Regulator,Powertrain
+ACT023,Action,Update Range Estimation Algorithm,Powertrain
+ACT024,Action,Inspect Torque Arbitration Logic,Powertrain
+ACT025,Action,Inspect Diagnostic Communication Bus,Powertrain
+ACT026,Action,Replace Degraded Cell,Battery
+ACT027,Action,Inspect Cell Balancing Circuit,Battery

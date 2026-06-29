@@ -1,0 +1,28 @@
+node_id,node_type,name,domain
+RC001,RootCause,Cooling System Failure,Battery
+RC002,RootCause,Battery Cell Aging,Battery
+RC003,RootCause,Excessive Load Demand,Battery
+RC004,RootCause,Charging System Failure,Battery
+RC005,RootCause,Power Electronics Failure,Battery
+RC006,RootCause,Battery Pack Degradation,Battery
+RC007,RootCause,Thermal Management Failure,Battery
+RC008,RootCause,Cell Balancing Failure,Battery
+RC009,RootCause,BMS Sensor Failure,Battery
+RC010,RootCause,Electrolyte Degradation,Battery
+RC011,RootCause,Motor Control Software Failure,Powertrain
+RC012,RootCause,Mechanical Overload,Powertrain
+RC013,RootCause,Speed Limiter Malfunction,Powertrain
+RC014,RootCause,Inverter Cooling Failure,Powertrain
+RC015,RootCause,Regenerative Brake Controller Failure,Powertrain
+RC016,RootCause,Pedal Sensor Wiring Failure,Powertrain
+RC017,RootCause,Power Management Software Failure,Powertrain
+RC018,RootCause,Energy Metering Sensor Drift,Powertrain
+RC019,RootCause,Drive Mode Switch Failure,Powertrain
+RC020,RootCause,Charging Port Communication Failure,Powertrain
+RC021,RootCause,Motor Winding Short Circuit,Powertrain
+RC022,RootCause,Inverter Voltage Regulation Failure,Powertrain
+RC023,RootCause,Range Estimation Software Error,Powertrain
+RC024,RootCause,Torque Arbitration Software Failure,Powertrain
+RC025,RootCause,Diagnostic Communication Bus Delay,Powertrain
+RC026,RootCause,Cell Degradation,Battery
+RC027,RootCause,Cell Balancing Circuit Failure,Battery

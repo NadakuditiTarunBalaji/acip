@@ -1,0 +1,11 @@
+node_id,node_type,name,domain
+ECU001,ECU,Motor Control ECU,Powertrain
+ECU002,ECU,Battery Management ECU,Powertrain
+ECU003,ECU,Inverter ECU,Powertrain
+ECU004,ECU,Torque Management ECU,Powertrain
+ECU005,ECU,Energy Management ECU,Powertrain
+ECU006,ECU,Power Distribution ECU,Powertrain
+ECU007,ECU,Regenerative Braking ECU,Powertrain
+ECU008,ECU,Drive Control ECU,Powertrain
+ECU009,ECU,Charging Coordination ECU,Powertrain
+ECU010,ECU,Powertrain Gateway ECU,Powertrain

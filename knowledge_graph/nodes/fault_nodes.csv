@@ -1,0 +1,28 @@
+node_id,node_type,name,domain
+FAULT001,Fault,Battery Overvoltage Fault,Battery
+FAULT002,Fault,Battery Undervoltage Fault,Battery
+FAULT003,Fault,Battery Overcurrent Fault,Battery
+FAULT004,Fault,Battery Overtemperature Fault,Battery
+FAULT005,Fault,Battery Undertemperature Fault,Battery
+FAULT006,Fault,Low SOC Warning Fault,Battery
+FAULT007,Fault,Critical SOC Fault,Battery
+FAULT008,Fault,Battery SOH Degradation Fault,Battery
+FAULT009,Fault,Critical Battery SOH Fault,Battery
+FAULT010,Fault,Cell Voltage Imbalance Fault,Battery
+FAULT011,Fault,Motor Overspeed Fault,Powertrain
+FAULT012,Fault,Motor Overtorque Fault,Powertrain
+FAULT013,Fault,Vehicle Overspeed Fault,Powertrain
+FAULT014,Fault,Inverter Overtemperature Fault,Powertrain
+FAULT015,Fault,Regenerative Braking Fault,Powertrain
+FAULT016,Fault,Accelerator Pedal Sensor Fault,Powertrain
+FAULT017,Fault,Power Output Limiting Fault,Powertrain
+FAULT018,Fault,Energy Consumption Anomaly Fault,Powertrain
+FAULT019,Fault,Drive Mode Selection Fault,Powertrain
+FAULT020,Fault,Charging Communication Fault,Powertrain
+FAULT021,Fault,Motor Overcurrent Fault,Powertrain
+FAULT022,Fault,Motor Overvoltage Fault,Powertrain
+FAULT023,Fault,Range Estimation Algorithm Fault,Powertrain
+FAULT024,Fault,Torque Request Limiting Fault,Powertrain
+FAULT025,Fault,Diagnostic Response Time Fault,Powertrain
+FAULT026,Fault,Cell Undervoltage Fault,Battery
+FAULT027,Fault,Cell Overvoltage Fault,Battery

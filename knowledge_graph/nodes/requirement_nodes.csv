@@ -1,0 +1,28 @@
+node_id,node_type,name,category
+REQ001,Requirement,Battery voltage shall not exceed 420V,Safety
+REQ002,Requirement,Battery voltage shall not drop below 280V,Safety
+REQ003,Requirement,Battery current shall not exceed 300A,Safety
+REQ004,Requirement,Battery temperature shall not exceed 45 degrees C,Safety
+REQ005,Requirement,Battery temperature shall not drop below minus 20 degrees C,Safety
+REQ006,Requirement,SOC warning shall trigger below 20 percent,Functional
+REQ007,Requirement,SOC critical shall trigger below 10 percent,Functional
+REQ008,Requirement,SOH warning shall trigger below 80 percent,Functional
+REQ009,Requirement,SOH critical shall trigger below 60 percent,Functional
+REQ010,Requirement,Cell voltage imbalance shall not exceed 50mV,Safety
+REQ011,Requirement,Motor speed shall not exceed 12000 RPM,Safety
+REQ012,Requirement,Motor torque shall not exceed 350 Nm,Functional
+REQ013,Requirement,Vehicle speed shall not exceed 200 km/h,Safety
+REQ014,Requirement,Inverter temperature shall not exceed 85 degrees C,Safety
+REQ015,Requirement,Regenerative braking shall recover minimum 70 percent energy,Functional
+REQ016,Requirement,Accelerator position shall not exceed 100 percent of pedal travel,Safety
+REQ017,Requirement,Power output shall not exceed 300 kW rated maximum,Functional
+REQ018,Requirement,Energy consumption shall not exceed 25 kWh per trip,Functional
+REQ019,Requirement,Drive mode selection shall respond within 500 ms of activation,Functional
+REQ020,Requirement,Charging status shall update within 1 second during charging cycle,Functional
+REQ021,Requirement,Motor current shall not exceed 300A during operation,Safety
+REQ022,Requirement,Motor voltage shall not exceed 450V during operation,Safety
+REQ023,Requirement,Available range estimation error shall not exceed 5 percent,Functional
+REQ024,Requirement,Torque request shall not exceed 350 Nm motor torque limit,Safety
+REQ025,Requirement,Powertrain fault status shall trigger DTC within 100 ms of fault detection,Safety
+REQ026,Requirement,Cell minimum voltage shall not drop below 3.0V per cell,Safety
+REQ027,Requirement,Cell maximum voltage shall not exceed 4.2V per cell,Safety

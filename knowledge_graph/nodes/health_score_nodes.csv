@@ -1,0 +1,6 @@
+node_id,node_type,name,score
+HS001,HealthScore,Excellent,100
+HS002,HealthScore,Good,80
+HS003,HealthScore,Fair,60
+HS004,HealthScore,Poor,40
+HS005,HealthScore,Critical,20

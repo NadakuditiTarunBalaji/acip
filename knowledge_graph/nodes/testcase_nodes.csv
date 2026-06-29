@@ -1,0 +1,28 @@
+node_id,node_type,name,expected_result
+TC001,TestCase,Apply 421V to battery - verify DTC001 triggers,DTC001 triggered and fault logged
+TC002,TestCase,Drop battery to 279V - verify DTC002 triggers,DTC002 triggered and fault logged
+TC003,TestCase,Apply 301A current - verify DTC003 triggers,DTC003 triggered and fault logged
+TC004,TestCase,Heat battery to 46 degrees C - verify DTC004 triggers,DTC004 triggered and vehicle response confirmed
+TC005,TestCase,Cool battery to minus 21 degrees C - verify DTC005 triggers,DTC005 triggered and heater activated
+TC006,TestCase,Drain SOC to 19 percent - verify warning alert,Warning alert displayed on dashboard
+TC007,TestCase,Drain SOC to 9 percent - verify critical alert,Critical alert and limp mode activated
+TC008,TestCase,Degrade SOH to 79 percent - verify warning,SOH warning displayed to driver
+TC009,TestCase,Degrade SOH to 59 percent - verify critical,Critical SOH alert and service notification sent
+TC010,TestCase,Create 51mV cell imbalance - verify DTC010,DTC010 triggered and balancing initiated
+TC011,TestCase,Exceed 12001 RPM - verify motor protection,Motor speed limited and fault logged
+TC012,TestCase,Request 351 Nm torque - verify torque limit,Torque capped at 350 Nm
+TC013,TestCase,Exceed 201 km/h - verify speed limiter,Speed limited and warning displayed
+TC014,TestCase,Heat inverter to 86 degrees C - verify protection,Inverter protection activated
+TC015,TestCase,Verify regen braking energy recovery at 70 percent,Energy recovery confirmed at minimum 70 percent
+TC016,TestCase,Simulate accelerator pedal failure - verify detection,Pedal failure DTC triggered within 100ms
+TC017,TestCase,Exceed max rated power output - verify limiting,Power output capped at rated limit
+TC018,TestCase,Monitor energy consumption over 100km drive,Energy consumption report generated correctly
+TC019,TestCase,Select invalid drive mode - verify rejection,Invalid mode rejected and warning shown
+TC020,TestCase,Monitor charging status during full charge cycle,Charging status updated correctly throughout cycle
+TC021,TestCase,Exceed motor current limit - verify overcurrent protection,Overcurrent DTC triggered and motor protected
+TC022,TestCase,Apply overvoltage to motor - verify protection,Motor overvoltage DTC triggered
+TC023,TestCase,Verify range estimation accuracy within 5 percent,Range estimate within 5 percent of actual range
+TC024,TestCase,Request torque exceeding motor limit - verify limiting,Torque request capped at motor limit
+TC025,TestCase,Inject powertrain fault - verify DTC within 100ms,DTC triggered within 100ms of fault injection
+TC026,TestCase,Drop cell voltage below 3.0V - verify DTC,Cell undervoltage DTC triggered immediately
+TC027,TestCase,Raise cell voltage above 4.2V - verify DTC,Cell overvoltage DTC triggered immediately

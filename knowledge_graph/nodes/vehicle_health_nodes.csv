@@ -1,0 +1,11 @@
+node_id,node_type,name,health_category
+VH001,VehicleHealth,Battery Health,Battery
+VH002,VehicleHealth,Motor Health,Powertrain
+VH003,VehicleHealth,Inverter Health,Powertrain
+VH004,VehicleHealth,Charging Health,Charging
+VH005,VehicleHealth,Thermal Health,Thermal
+VH006,VehicleHealth,Brake Health,Chassis
+VH007,VehicleHealth,Steering Health,Chassis
+VH008,VehicleHealth,Sensor Health,Electronics
+VH009,VehicleHealth,Communication Health,Network
+VH010,VehicleHealth,Overall Vehicle Health,System
