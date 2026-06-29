@@ -1,313 +1,417 @@
-﻿📁 agents
-📁 backend
-📁 dashboard
-📁 data
-📁 database
-📁 deployment
-📁 docs
-📁 frontend
-📁 hardware
-📁 knowledge_graph
-📁 notebooks
-📁 testing
-📁 uploads
-📄 .env
-📄 .gitignore
-📄 .gitkeep
-📄 a.txt
-📄 backendtree.md
-📄 endpoints.txt
-📄 execution.md
-📄 folder_struct.md
-📄 old.db
-📄 PROJECT_ROADMAP.md
-📄 project_tree.md
-📄 README.md
-📄 requirements.txt
-📄 seed_new_calibrations.py
-📄 temp.db
-📄 tree.md
-    📁 calibration_agent
-    📁 digital_twin_agent
-    📁 impact_analysis_agent
-    📁 insurance_agent
-    📁 orchestrator
-    📁 predictive_maintenance_agent
-    📁 requirement_agent
-    📁 root_cause_agent
-    📁 vehicle_health_agent
-    📄 __init__.py
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 impact_analysis_agent.py
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 engineering_intelligence_flow.py
-        📄 requirement_rootcause_flow.py
-        📄 __init__.py
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 failure_predictor.py
-        📄 failure_predictor_api.py
-        📄 gap_conflict_api.py
-        📄 gap_conflict_engine.py
-        📄 impact_analyzer.py
-        📄 impact_kg_api.py
-        📄 kg_visualizer.py
-        📄 mistake_detector.py
-        📄 mistake_detector_api.py
-        📄 requirement_agent.py
-        📄 Requirement_Agent_Design.md
-        📄 requirement_parser.py
-        📄 requirement_parser_api.py
-        📄 safety_check.py
-        📄 testcase_generator.py
-        📄 testcase_safety_api.py
-        📄 traceability_api.py
-        📄 traceability_engine.py
-        📄 __init__.py
-        📄 .gitkeep
-        📄 diagnostic_engine.py
-        📄 root_cause_agent.py
-        📄 __init__.py
-        📄 .gitkeep
-    📁 api
-    📁 config
-    📁 models
-    📁 repositories
-    📁 schemas
-    📁 services
-    📁 utils
-    📄 create_db.py
-    📄 main.py
-        📄 .gitkeep
-        📄 ai.py
-        📄 breakdown.py
-        📄 calibration.py
-        📄 can.py
-        📄 dashboard.py
-        📄 dtc.py
-        📄 ecu.py
-        📄 emergency.py
-        📄 engineer_chat.py
-        📄 fault.py
-        📄 insurance_claim.py
-        📄 personality.py
-        📄 requirement.py
-        📄 resale.py
-        📄 signal.py
-        📄 telemetry.py
-        📄 testcase.py
-        📄 vehicle_data.py
-        📄 ws.py
-        📄 .gitkeep
-        📄 database.py
-        📄 websocket_manager.py
-        📄 .gitkeep
-        📄 accident_event.py
-        📄 agent_result.py
-        📄 breakdown_event.py
-        📄 calibration.py
-        📄 can_frame.py
-        📄 digital_twin.py
-        📄 dtc.py
-        📄 ecu.py
-        📄 emergency_contact.py
-        📄 fault.py
-        📄 insurance_claim.py
-        📄 insurance_policy.py
-        📄 kg_node.py
-        📄 kg_relation.py
-        📄 nearby_device.py
-        📄 requirement.py
-        📄 signal.py
-        📄 testcase.py
-        📄 vehicle.py
-        📄 vehicle_data.py
-        📄 vehicle_destination.py
-        📄 vehicle_health.py
-        📄 vehicle_telemetry.py
-        📄 __init__.py
-        📄 .gitkeep
-        📄 calibration_repository.py
-        📄 dtc_repository.py
-        📄 ecu_repository.py
-        📄 fault_repository.py
-        📄 insurance_repository.py
-        📄 requirement_repository.py
-        📄 signal_repository.py
-        📄 vehicle_repository.py
-        📄 calibration_schema.py
-        📄 can.py
-        📄 dtc_schema.py
-        📄 ecu_schema.py
-        📄 emergency_schema.py
-        📄 fault_schema.py
-        📄 insurance_schema.py
-        📄 requirement_schema.py
-        📄 signal_schema.py
-        📄 vehicle_schema.py
-        📄 .gitkeep
-        📄 accident_service.py
-        📄 ai_fusion_service.py
-        📄 ai_service.py
-        📄 breakdown_chat_service.py
-        📄 breakdown_service.py
-        📄 calibration_service.py
-        📄 can_service.py
-        📄 car_chat_service.py
-        📄 dashboard_service.py
-        📄 dtc_service.py
-        📄 ecu_service.py
-        📄 engineer_chat_service.py
-        📄 fault_service.py
-        📄 gemini_client.py
-        📄 health_certificate_service.py
-        📄 insurance_service.py
-        📄 invisible_mechanic_service.py
-        📄 master_data_manager.py
-        📄 personality_service.py
-        📄 predictive_alerts_service.py
-        📄 problem_engine.py
-        📄 requirement_service.py
-        📄 resale_value_service.py
-        📄 signal_service.py
-        📄 sms_service.py
-        📄 unified_voice_service.py
-        📄 vehicle_service.py
-        📄 vehicle_situation_service.py
-        📄 .gitkeep
-        📄 check_calibration_data.py
-        📄 check_dtc_data.py
-        📄 check_ecu_data.py
-        📄 check_fault_data.py
-        📄 check_insurance_data.py
-        📄 check_requirement_data.py
-        📄 check_signal_data.py
-        📄 check_tables.py
-        📄 check_vehicle_data.py
-        📄 init_db.py
-        📄 inject_test_scenario.py
-        📄 migrate_day15b_telemetry_v2.py
-        📄 migrate_day15c_telemetry_v3.py
-        📄 migrate_day15d_destination.py
-        📄 migrate_day15e_trip_computer.py
-        📄 migrate_day15_telemetry.py
-        📄 migrate_day18_sms.py
-        📄 migrate_day19_chat.py
-        📄 migrate_day21_resale.py
-        📄 seed_all.py
-        📄 seed_calibrations.py
-        📄 seed_dtcs.py
-        📄 seed_ecus.py
-        📄 seed_emergency_contacts.py
-        📄 seed_faults.py
-        📄 seed_insurance_claims.py
-        📄 seed_requirements.py
-        📄 seed_signals.py
-        📄 seed_vehicle_data.py
-        📄 test_all.py
-        📄 test_requirement_repository.py
-    📄 dashboard_app.py
-    📁 exports
-    📁 processed
-    📁 raw
-    📁 synthetic
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 Calibration_Master.xlsx
-        📄 DTC_Master.xlsx
-        📄 ECU_Master.xlsx
-        📄 Fault_Master.xlsx
-        📄 Signal_Master.xlsx
-        📄 TestCase_Master.xlsx
-        📄 .gitkeep
-    📁 migrations
-    📁 schemas
-    📁 sqlite
-    📄 .gitkeep
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 acip.db
-    📄 .gitkeep
-    📁 architecture
-    📁 design
-    📁 diagrams
-    📁 presentations
-    📁 requirements
-    📄 .gitkeep
-        📄 .gitkeep
-        📄 Vehicle_Program_Definition.xlsx
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 .gitkeep
-    📄 .gitkeep
-    📄 index.html
-    📁 can
-    📁 obd
-    📁 sensors
-    📁 stm32
-        📄 .gitkeep
-        📄 can_simulator.py
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 .gitkeep
-    📁 edges
-    📁 graph_builder
-    📁 graph_queries
-    📁 nodes
-    📄 .gitkeep
-        📄 .gitkeep
-        📄 dtc_fault_edges.csv
-        📄 ecu_signal_edges.csv
-        📄 fault_agent_edges.csv
-        📄 fault_rootcause_edges.csv
-        📄 fault_vehiclehealth_edges.csv
-        📄 healthscore_risk_edges.csv
-        📄 requirement_signal_edges.csv
-        📄 requirement_testcase_edges.csv
-        📄 rootcause_action_edges.csv
-        📄 signal_calibration_edges.csv
-        📄 signal_dtc_edges.csv
-        📄 vehiclehealth_score_edges.csv
-        📄 vehicle_ecu_edges.csv
-        📄 .gitkeep
-        📄 graph_builder.py
-        📄 kg_api.py
-        📄 kg_engine.py
-        📄 .gitkeep
-        📄 action_recommendation_query.py
-        📄 fault_to_action_query.py
-        📄 query_engine.py
-        📄 root_cause_query.py
-        📄 vehicle_health_assessment.py
-        📄 vehicle_health_query.py
-        📄 vehicle_health_score_query.py
-        📄 .gitkeep
-        📄 action_nodes.csv
-        📄 agent_nodes.csv
-        📄 calibration_nodes.csv
-        📄 dtc_nodes.csv
-        📄 ecu_nodes.csv
-        📄 fault_nodes.csv
-        📄 health_score_nodes.csv
-        📄 requirement_nodes.csv
-        📄 risk_level_nodes.csv
-        📄 rootcause_nodes.csv
-        📄 signal_nodes.csv
-        📄 testcase_nodes.csv
-        📄 vehicle_health_nodes.csv
-        📄 vehicle_nodes.csv
-    📄 .gitkeep
-    📁 datasets
-    📁 integration_tests
-    📁 simulation_tests
-    📁 unit_tests
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 .gitkeep
-        📄 .gitkeep
-    📁 requirements
+﻿# Project Folder Structure
+
+This document explains the purpose of each folder and important files in the project.
+
+---
+
+# Root Directory
+
+```
+Project/
+```
+
+Contains the complete Automotive AI Copilot platform including backend services, AI agents, dashboard, hardware simulation, knowledge graph, datasets, and documentation.
+
+---
+
+# Top-Level Folders
+
+## 📁 agents
+
+Contains all AI agents responsible for performing intelligent automotive engineering tasks.
+
+### Subfolders
+
+* **calibration_agent/**
+
+  * Handles calibration validation and parameter analysis.
+
+* **digital_twin_agent/**
+
+  * Simulates vehicle digital twin behavior.
+
+* **impact_analysis_agent/**
+
+  * Predicts the impact of engineering changes.
+
+* **insurance_agent/**
+
+  * Insurance claim intelligence.
+
+* **orchestrator/**
+
+  * Coordinates communication between multiple AI agents.
+
+* **predictive_maintenance_agent/**
+
+  * Predicts upcoming failures using vehicle data.
+
+* **requirement_agent/**
+
+  * Requirement parsing, validation, traceability, testcase generation, and engineering intelligence.
+
+* **root_cause_agent/**
+
+  * Performs diagnostic reasoning to identify root causes.
+
+* **vehicle_health_agent/**
+
+  * Calculates overall vehicle health.
+
+---
+
+## 📁 backend
+
+Main FastAPI backend application.
+
+### api/
+
+REST API endpoints.
+
+Example:
+
+* Vehicle APIs
+* Fault APIs
+* CAN APIs
+* ECU APIs
+* Dashboard APIs
+* Requirement APIs
+
+### config/
+
+Configuration files.
+
+### models/
+
+SQLAlchemy database models.
+
+### repositories/
+
+Database CRUD layer.
+
+### schemas/
+
+Pydantic request/response models.
+
+### services/
+
+Business logic.
+
+Examples:
+
+* AI Services
+* Dashboard Services
+* CAN Services
+* Vehicle Services
+* Breakdown Services
+* Insurance Services
+
+### utils/
+
+Utility scripts.
+
+Includes:
+
+* Database initialization
+* Data seeding
+* Data migration
+* Testing scripts
+* Validation utilities
+
+### main.py
+
+FastAPI application entry point.
+
+---
+
+## 📁 dashboard
+
+Streamlit dashboard.
+
+Contains:
+
+* Dashboard application
+* Exported reports
+* Processed datasets
+* Raw datasets
+* Synthetic datasets
+
+---
+
+## 📁 data
+
+Master engineering datasets.
+
+Contains Excel master files such as:
+
+* Calibration Master
+* ECU Master
+* DTC Master
+* Fault Master
+* Signal Master
+* TestCase Master
+
+---
+
+## 📁 database
+
+Database resources.
+
+Contains:
+
+* SQLite database
+* Database schemas
+* Migrations
+
+---
+
+## 📁 deployment
+
+Deployment resources.
+
+May include:
+
+* Docker files
+* Kubernetes
+* Deployment scripts
+* CI/CD configuration
+
+---
+
+## 📁 docs
+
+Project documentation.
+
+Includes:
+
+* Architecture documents
+* Design documents
+* Diagrams
+* Presentations
+* Requirements
+
+---
+
+## 📁 frontend
+
+Frontend web application.
+
+Contains HTML pages and future UI assets.
+
+---
+
+## 📁 hardware
+
+Vehicle hardware simulation.
+
+### can/
+
+CAN communication modules.
+
+### obd/
+
+OBD interfaces.
+
+### sensors/
+
+Sensor simulation.
+
+### stm32/
+
+STM32 firmware support.
+
+Contains:
+
+* CAN simulator
+* Embedded utilities
+
+---
+
+## 📁 knowledge_graph
+
+Knowledge Graph implementation.
+
+### edges/
+
+Relationship CSV files.
+
+Examples:
+
+* ECU → Signal
+* DTC → Fault
+* Requirement → Testcase
+* Fault → Root Cause
+
+### nodes/
+
+Knowledge Graph node definitions.
+
+Examples:
+
+* Vehicle
+* ECU
+* Signal
+* DTC
+* Calibration
+* Requirement
+* Testcase
+
+### graph_builder/
+
+Graph construction engine.
+
+### graph_queries/
+
+Knowledge Graph query engine.
+
+---
+
+## 📁 notebooks
+
+Jupyter notebooks used for:
+
+* Experiments
+* Model evaluation
+* Data analysis
+
+---
+
+## 📁 testing
+
+Project testing.
+
+### datasets/
+
+Testing datasets.
+
+### integration_tests/
+
+Integration testing.
+
+### simulation_tests/
+
+Simulation testing.
+
+### unit_tests/
+
+Unit testing.
+
+---
+
+## 📁 uploads
+
+Stores uploaded files from users.
+
+Examples:
+
+* Requirement documents
+* CAN logs
+* Calibration files
+* Reports
+
+---
+
+# Important Root Files
+
+## README.md
+
+Project overview and setup instructions.
+
+---
+
+## requirements.txt
+
+Python dependencies.
+
+Install using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## execution.md
+
+Instructions to initialize the database and start all project services.
+
+---
+
+## folder_struct.md
+
+Documentation describing the project folder structure.
+
+---
+
+## PROJECT_ROADMAP.md
+
+Development roadmap and planned milestones.
+
+---
+
+## project_tree.md
+
+Complete project directory tree.
+
+---
+
+## backendtree.md
+
+Detailed backend folder structure.
+
+---
+
+## endpoints.txt
+
+List of backend REST API endpoints.
+
+---
+
+## .env
+
+Environment variables.
+
+Examples:
+
+* API Keys
+* Database URLs
+* Configuration settings
+
+---
+
+## seed_new_calibrations.py
+
+Script to insert additional calibration data into the database.
+
+---
+
+## old.db / temp.db
+
+Temporary or backup SQLite databases used during development.
+
+---
+
+# Overall Architecture
+
+```
+                 Frontend
+                     │
+                     ▼
+              FastAPI Backend
+                     │
+        ┌────────────┼────────────┐
+        ▼            ▼            ▼
+   AI Agents     Services     Database
+        │            │            │
+        └────────────┼────────────┘
+                     ▼
+            Knowledge Graph
+                     │
+                     ▼
+             Hardware Simulator
+                     │
+                     ▼
+           Streamlit Dashboard
+```
+
+This structure follows a modular architecture where AI agents, backend services, hardware simulation, the knowledge graph, and the dashboard are separated into independent components, making the project easier to maintain, extend, and test.
