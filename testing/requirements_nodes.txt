@@ -1,0 +1,30 @@
+Battery insulation resistance shall not drop below 500 ohms per volt
+DC bus voltage ripple shall not exceed 5 percent
+Coolant temperature shall not exceed 60 degrees C
+Coolant pressure shall remain between 100 and 250 kPa
+Charging current shall not exceed 150A during DC fast charging
+AC charging power shall not exceed 22 kW
+Battery cooling fan shall activate above 40 degrees C
+Battery cooling fan shall deactivate below 35 degrees C
+High voltage contactors shall close within 100 ms of enable command
+High voltage contactors shall open within 50 ms of shutdown command
+Isolation fault shall trigger a warning within 200 ms
+Brake pedal position shall not exceed 100 percent of travel
+Steering assist torque shall not exceed 80 Nm
+Wheel slip ratio shall not exceed 20 percent during acceleration
+Traction control shall respond within 50 ms of slip detection
+ABS shall activate within 30 ms of wheel lock detection
+Motor winding temperature shall not exceed 160 degrees C
+Inverter switching frequency shall not exceed 20 kHz
+DC-DC converter output voltage shall remain between 13.5V and 14.8V
+12V battery voltage shall not drop below 11.5V
+State of charge estimation error shall not exceed 3 percent
+State of health estimation shall update every 10 minutes
+Battery balancing shall begin when cell voltage difference exceeds 20mV
+Vehicle acceleration shall not exceed 5 m/s² in Eco mode
+Reverse vehicle speed shall not exceed 15 km/h
+Parking brake shall engage within 1 second of command
+Charging connector temperature shall not exceed 70 degrees C
+Fast charging shall stop when battery SOC reaches 80 percent
+Emergency shutdown shall disconnect high voltage supply within 100 ms
+Power electronics enclosure temperature shall not exceed 90 degrees C

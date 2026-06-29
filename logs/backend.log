@@ -1,0 +1,41 @@
+INFO:     Started server process [19556]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+ImpactAnalyzer loaded — 27 calibrations, 23 signals, 27 requirements
+GapConflictEngine loaded — 27 requirements
+FailurePredictor loaded — 27 requirements, 27 DB calibrations
+MistakeDetector loaded — 27 requirements
+TestCaseGenerator loaded — 27 requirements
+SafetyChecker loaded — 27 requirements
+ImpactAnalyzer loaded — 27 calibrations, 23 signals, 27 requirements
+KGVisualizer loaded — 223 nodes, 228 edges
+INFO:     127.0.0.1:58171 - "GET /api/telemetry/destination/VEH001 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64707 - "POST /api/telemetry/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64708 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64709 - "GET /api/engineering/requirements/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64710 - "GET /api/requirements/ HTTP/1.1" 200 OK
+KG Loaded — Nodes: 223 | Edges: 228
+INFO:     127.0.0.1:64711 - "GET /api/kg/requirements/gaps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64712 - "GET /api/requirements/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64713 - "GET /api/kg/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64714 - "GET /api/faults/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64715 - "GET /api/kg/fault/FAULT001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64716 - "GET /api/dtcs/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64717 - "GET /api/kg/dtc/DTC001 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64718 - "GET /api/ecus/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64719 - "GET /api/dashboard/calibration-limits HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64720 - "GET /api/dashboard/active-dtcs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64721 - "GET /api/dashboard/active-faults HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64722 - "GET /api/telemetry/destination/VEH001 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64723 - "POST /api/telemetry/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64724 - "GET /api/telemetry/destination/VEH001 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64725 - "POST /api/telemetry/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64726 - "GET /api/telemetry/destination/VEH001 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64727 - "POST /api/telemetry/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62161 - "GET /api/telemetry/destination/VEH001 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62162 - "POST /api/telemetry/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62163 - "GET /api/telemetry/destination/VEH001 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62164 - "POST /api/telemetry/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62165 - "GET /api/telemetry/destination/VEH001 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62166 - "POST /api/telemetry/ HTTP/1.1" 200 OK
