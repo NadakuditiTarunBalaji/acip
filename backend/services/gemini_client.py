@@ -1,5 +1,5 @@
 """
-ACIP-X1 — Shared Gemini Client & Car Personality (Day 19 C5 + Day 20 C6/C10)
+ACIP-X1 — Shared Gemini Client & Car Personality 
 
 Centralizes the Gemini API client setup and the car's personality
 voice so every AI chat feature in ACIP-X1 (breakdown assistance,
